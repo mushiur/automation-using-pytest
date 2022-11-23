@@ -1,5 +1,4 @@
-from selenium import webdriver
-from selenium.webdriver.chrome.service import Service
+from utilites.readProperties import Readconfig
 
 
 class OpenBrowser:
@@ -7,9 +6,9 @@ class OpenBrowser:
     def __init__(self, driver):
         self.driver = driver
 
-    def open_webBrowser(self):
+    def open_webBrowser(self, config):
         # s = Service("../Driver/chromedriver.exe")
         # self.driver = webdriver.Chrome(service=s)
-        self.driver.get("https://demo.nopcommerce.com/")
-        self.driver.maximize_window()
+        baseURL = Readconfig.getApplicationURL(config)
+        self.driver.get(baseURL)
         self.driver.implicitly_wait(20)

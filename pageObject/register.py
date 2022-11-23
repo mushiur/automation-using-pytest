@@ -1,5 +1,6 @@
 import testData.registerData
 import locators
+from utilites.readProperties import Readconfig
 
 
 class Register:
