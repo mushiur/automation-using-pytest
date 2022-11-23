@@ -1,0 +1,4 @@
+./tests/.pytest_cache
+./tests/__pycache__
+./pageObject/__pycache__
+find . -type d -name  "__pycache__" -exec rm -r {} +

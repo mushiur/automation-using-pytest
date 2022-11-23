@@ -1,0 +1,5 @@
+country = "Bangladesh"
+city = "Dhaka"
+Address1 = "Khilgaon, Dhaka"
+pos_code = "1219"
+phn_num = "01876006208"
