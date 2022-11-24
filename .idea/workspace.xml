@@ -2,10 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="45352f2b-2477-4c2f-808d-e29e33ef4c3b" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/automation-using-pytest.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/automation-using-pytest.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pageObject/register.py" beforeDir="false" afterPath="$PROJECT_DIR$/pageObject/register.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_login.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_login.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_register.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_register.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pageObject/login.py" beforeDir="false" afterPath="$PROJECT_DIR$/pageObject/login.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pageObject/search.py" beforeDir="false" afterPath="$PROJECT_DIR$/pageObject/search.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pageObject/shoppingCart.py" beforeDir="false" afterPath="$PROJECT_DIR$/pageObject/shoppingCart.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_search.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_search.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
