@@ -11,7 +11,5 @@ class Search:
         element.click()
         element.send_keys(testData.searchData.productName)
         element.submit()
-
-    def choose_product(self):
         self.driver.find_element("xpath", locators.choose_product).click()
 
