@@ -8,11 +8,10 @@ class CheckOut:
     def __init__(self, driver):
         self.driver = driver
 
-    def checkout_button(self):
+    def checkout_billing_details(self):
         self.driver.find_element("xpath", locators.term_condition_box).click()
         self.driver.find_element("xpath", locators.checkout_field).click()
 
-    def billing_page(self):
         country = self.driver.find_element("xpath", locators.country_field)
         country.click()
         country.send_keys(testData.checkoutData.country)
@@ -36,7 +35,6 @@ class CheckOut:
         cntnue = self.driver.find_element("xpath", locators.continue_button)
         cntnue.click()
 
-    def checkout_page(self):
         self.driver.find_element("xpath", locators.shipping_method_field).click()
         self.driver.find_element("xpath", locators.payment_method_field).click()
         self.driver.find_element("xpath", locators.payment_info_field).click()
