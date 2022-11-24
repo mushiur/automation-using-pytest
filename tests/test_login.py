@@ -12,6 +12,4 @@ class Test_002_LogIN:
         login = Login(driver)
         open_url.open_webBrowser(config)
         login.log_in()
-        login.log_email()
-        login.log_password()
-        login.log_confirm()
+
