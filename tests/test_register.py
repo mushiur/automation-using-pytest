@@ -1,10 +1,7 @@
 import pytest
-from selenium import webdriver
-from selenium.webdriver.chrome.service import Service
 
 from pageObject.openBrowser import OpenBrowser
 from pageObject.register import Register
-from utilites.readProperties import Readconfig
 
 
 class Test_001_register:
@@ -30,4 +27,4 @@ class Test_001_register:
         register.password()
         register.confirmPass()
         register.regConfirm()
-        register.Logout()
+        register.logout()

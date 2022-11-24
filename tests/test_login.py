@@ -2,7 +2,6 @@ import pytest
 
 from pageObject.login import Login
 from pageObject.openBrowser import OpenBrowser
-from utilites.readProperties import Readconfig
 
 
 class Test_002_LogIN:

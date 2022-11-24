@@ -40,5 +40,5 @@ class Register:
     def regConfirm(self):
         self.driver.find_element("xpath", locators.reg_confirm_field).click()
 
-    def Logout(self):
+    def logout(self):
         self.driver.find_element("xpath", locators.log_out).click()
