@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="45352f2b-2477-4c2f-808d-e29e33ef4c3b" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/automation-using-pytest.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/automation-using-pytest.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/conftest.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/locators.py" beforeDir="false" afterPath="$PROJECT_DIR$/locators.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pageObject/checkout.py" beforeDir="false" afterPath="$PROJECT_DIR$/pageObject/checkout.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_checkout.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_checkout.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testData/searchData.py" beforeDir="false" afterPath="$PROJECT_DIR$/testData/searchData.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,7 +42,7 @@
       <recent name="E:\automation-using-pytest" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.pytest for test_checkout.Test_005_checkout.test_checkout">
+  <component name="RunManager">
     <configuration name="pytest for test_checkout.Test_005_checkout" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="automation-using-pytest" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -80,6 +75,22 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
+    <configuration name="pytest for test_shopCart.Test_004_shopCart" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="automation-using-pytest" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_shopCart.Test_004_shopCart&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
     <configuration name="pytest in test_checkout.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="automation-using-pytest" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -93,22 +104,6 @@
       <option name="_new_parameters" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
       <option name="_new_target" value="&quot;$PROJECT_DIR$/tests/test_checkout.py&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="pytest in test_login.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
-      <module name="automation-using-pytest" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_keywords" value="&quot;&quot;" />
-      <option name="_new_parameters" value="&quot;&quot;" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/tests/test_login.py&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
@@ -130,11 +125,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.pytest for test_shopCart.Test_004_shopCart" />
         <item itemvalue="Python tests.pytest for test_checkout.Test_005_checkout.test_checkout" />
         <item itemvalue="Python tests.pytest for test_checkout.Test_005_checkout" />
         <item itemvalue="Python tests.pytest in test_checkout.py" />
         <item itemvalue="Python tests.pytest in test_register.py" />
-        <item itemvalue="Python tests.pytest in test_login.py" />
       </list>
     </recent_temporary>
   </component>
