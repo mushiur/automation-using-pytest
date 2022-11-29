@@ -8,11 +8,11 @@ from pageObject.openBrowser import OpenBrowser
 class Test_004_shopCart:
 
     @pytest.mark.order(4)
-    def test_shop(self, driver, config):
+    def test_shop(self, driver, config, locator):
         open_url = OpenBrowser(driver)
-        login = Login(driver)
-        search = Search(driver)
-        shop_cart = ShoppingCart(driver)
+        login = Login(driver, locator)
+        search = Search(driver, locator)
+        shop_cart = ShoppingCart(driver, locator)
         open_url.open_webBrowser(config)
         login.log_in()
         search.search_box()

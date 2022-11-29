@@ -6,16 +6,10 @@ from pageObject.register import Register
 
 class Test_001_register:
 
-    # def test_openPage(self, setup):
-    #     self.driver = setup
-    #     self.driver.get(self.baseURL)
-    #     self.driver.maximize_window()
-    #     self.driver.close()
-
     @pytest.mark.order(1)
-    def test_registration(self, driver, config):
+    def test_registration(self, driver, config, locator):
         open_url = OpenBrowser(driver)
-        register = Register(driver)
+        register = Register(driver, locator)
         open_url.open_webBrowser(config)
         register.registration()
         register.gender()
