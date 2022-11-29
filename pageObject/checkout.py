@@ -9,6 +9,7 @@ class CheckOut:
         self.driver = driver
 
     def checkout_billing_details(self):
+        self.driver.find_element("xpath", locators.shop_cart).click()
         self.driver.find_element("xpath", locators.term_condition_box).click()
         self.driver.find_element("xpath", locators.checkout_field).click()
 
@@ -42,4 +43,3 @@ class CheckOut:
         time.sleep(2)
         self.driver.find_element("xpath", locators.order_complete_field).click()
         time.sleep(2)
-        self.driver.close()

@@ -3,6 +3,7 @@ import os
 
 import pytest
 from selenium import webdriver
+from selenium.webdriver.chrome.service import Service
 
 
 @pytest.fixture(scope='function')
@@ -18,8 +19,10 @@ def config():
 def driver(request):
     cur_dir = os.path.dirname(os.path.realpath(__file__))
     _chromedriver = os.path.abspath(cur_dir) + "\\" + "driver\\chromedriver.exe"
-    driver = webdriver.Chrome(_chromedriver)
+    s = Service(_chromedriver)
+    driver = webdriver.Chrome(service=s)
     driver.maximize_window()
+    driver.implicitly_wait(30)
 
     def fin():
         driver.close()

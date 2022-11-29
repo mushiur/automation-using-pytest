@@ -19,7 +19,7 @@ confirm_log = "//button[@class = 'button-1 login-button']"
 
 # Search
 search_field = "small-searchterms"
-choose_product = "//a[normalize-space()='Custom T-Shirt']"
+choose_product = "//a[@href='/custom-t-shirt']"
 
 # Shopping Cart
 cart_text_field = "//input[@id='product_attribute_12']"
@@ -27,6 +27,7 @@ add_cart_field = "add-to-cart-button-29"
 shopping_cart_field = "//span[@class= 'cart-label']"
 
 # Checkout
+shop_cart = "//span[@class='cart-label']"
 term_condition_box = "//input[@id='termsofservice']"
 checkout_field = "//button[@id='checkout']"
 country_field = "//select[@id='BillingNewAddress_CountryId']"
