@@ -1,14 +1,11 @@
-from utilites.readProperties import Readconfig
-
 
 class OpenBrowser:
 
-    def __init__(self, driver):
+    def __init__(self, driver, config):
         self.driver = driver
+        self.config = config["common info"]["baseURL"]
 
-    def open_webBrowser(self, config):
-        # s = Service("../Driver/chromedriver.exe")
-        # self.driver = webdriver.Chrome(service=s)
-        baseURL = Readconfig.getApplicationURL(config)
+    def open_webBrowser(self):
+        baseURL = self.config
         self.driver.get(baseURL)
         self.driver.implicitly_wait(20)
