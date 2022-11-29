@@ -7,7 +7,7 @@ from pageObject.register import Register
 class Test_001_register:
 
     @pytest.mark.order(1)
-    def test_registration(self, driver, config, locator):
+    def test_registration(self, driver, config, locator, email):
         open_url = OpenBrowser(driver)
         register = Register(driver, locator)
         open_url.open_webBrowser(config)
@@ -16,7 +16,7 @@ class Test_001_register:
         register.gender()
         register.name()
         register.dob()
-        register.email()
+        register.email(email)
         register.company()
         register.password()
         register.confirmPass()

@@ -36,8 +36,8 @@ class Register:
         self.driver.find_element("name", self.birth_monthBtn).send_keys(testData.registerData.month)
         self.driver.find_element("name", self.birth_yearBtn).send_keys(testData.registerData.year)
 
-    def email(self):
-        self.driver.find_element("id", self.emailBtn).send_keys(testData.registerData.email)
+    def email(self, email):
+        self.driver.find_element("id", self.emailBtn).send_keys(email)
 
     def company(self):
         self.driver.find_element("id", self.company_boxBtn).send_keys(testData.registerData.company)

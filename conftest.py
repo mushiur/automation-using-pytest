@@ -1,5 +1,7 @@
 import configparser
 import os
+import random
+import string
 
 import pytest
 from selenium import webdriver
@@ -22,6 +24,11 @@ def locator():
     parser = configparser.ConfigParser()
     parser.read(_file)
     return parser
+
+
+@pytest.fixture(scope='session')
+def email():
+    return ''.join(random.choice(string.ascii_lowercase) for i in range(10)) + "@gmail.com"
 
 
 @pytest.fixture(scope='function')
