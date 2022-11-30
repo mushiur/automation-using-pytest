@@ -32,7 +32,7 @@ def email():
 
 
 @pytest.fixture(scope='function')
-def driver(request):
+def driver():
     cur_dir = os.path.dirname(os.path.realpath(__file__))
     _chromedriver = os.path.abspath(cur_dir) + "\\" + "driver\\chromedriver.exe"
     s = Service(_chromedriver)

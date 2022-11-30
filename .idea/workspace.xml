@@ -2,12 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="45352f2b-2477-4c2f-808d-e29e33ef4c3b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utilites/datareader.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/automation-using-pytest.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/automation-using-pytest.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testData/data.ini" beforeDir="false" afterPath="$PROJECT_DIR$/testData/data.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/conftest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pageObject/register.py" beforeDir="false" afterPath="$PROJECT_DIR$/pageObject/register.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testData/data.ini" beforeDir="false" afterPath="$PROJECT_DIR$/data.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_register.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_register.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,11 +43,14 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "E:/automation-using-pytest",
+    "last_opened_file_path": "E:/automation-using-pytest/utilites",
     "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\automation-using-pytest\utilites" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\automation-using-pytest" />
     </key>
