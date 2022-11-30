@@ -39,9 +39,11 @@ def driver(request):
     driver = webdriver.Chrome(service=s)
     driver.maximize_window()
     driver.implicitly_wait(30)
+    yield driver
+    driver.quit()
 
-    def fin():
-        driver.close()
-
-    request.addfinalizer(fin)
-    return driver
+    # def fin():
+    #     driver.close()
+    #
+    # request.addfinalizer(fin)
+    # return driver
