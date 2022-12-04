@@ -34,3 +34,4 @@ class Register:
         self.driver.find_element("id", self.confirm_pass_fieldBtn).send_keys(reg['password'])
         self.driver.find_element("xpath", self.reg_confirm_fieldBtn).click()
         self.driver.find_element("xpath", self.log_outBtn).click()
+
