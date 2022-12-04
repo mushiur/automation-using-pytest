@@ -17,4 +17,4 @@ class Test_001_register:
         open_url = OpenBrowser(driver, config)
         register = Register(driver, locator)
         open_url.open_webBrowser()
-        register.registration(email=email, reg=self.reg)
+        register.registration(email, self.reg)

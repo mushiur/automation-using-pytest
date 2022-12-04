@@ -10,8 +10,8 @@ class Login:
         self.password_field = locator["LOCATORS"]["password_field"]
         self.conBtn = locator["LOCATORS"]["confirm_log"]
 
-    def log_in(self, email, reg):
+    def log_in(self, email, log):
         self.driver.find_element("xpath", self.loginBtn).click()
         self.driver.find_element("id", self.email).send_keys(email)
-        self.driver.find_element("id", self.password_field).send_keys(reg['password'])
+        self.driver.find_element("id", self.password_field).send_keys(log['password'])
         self.driver.find_element("xpath", self.conBtn).click()

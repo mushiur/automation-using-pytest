@@ -21,30 +21,30 @@ class CheckOut:
         self.confirm_order_filed = locator["LOCATORS"]["confirm_order_filed"]
         self.order_complete_field = locator["LOCATORS"]["order_complete_field"]
 
-    def checkout_billing_details(self):
+    def checkout_billing_details(self, checkOut):
         self.driver.find_element("xpath", self.shop_cartBtn).click()
         self.driver.find_element("xpath", self.term_condition_boxBtn).click()
         self.driver.find_element("xpath", self.checkout_fieldBtn).click()
 
         country = self.driver.find_element("xpath", self.country_fieldBtn)
         country.click()
-        country.send_keys(testData.checkoutData.country)
+        country.send_keys(checkOut['country'])
 
         city = self.driver.find_element("xpath", self.city_fieldBtn)
         city.click()
-        city.send_keys(testData.checkoutData.city)
+        city.send_keys(checkOut['city'])
 
         address_1 = self.driver.find_element("xpath", self.address_1_fieldBtn)
         address_1.click()
-        address_1.send_keys(testData.checkoutData.Address1)
+        address_1.send_keys(checkOut['Address1'])
 
         pos_code = self.driver.find_element("xpath", self.postal_fieldBtn)
         pos_code.click()
-        pos_code.send_keys(testData.checkoutData.pos_code)
+        pos_code.send_keys(checkOut['pos_code'])
 
         phn = self.driver.find_element("xpath", self.phone_field)
         phn.click()
-        phn.send_keys(testData.checkoutData.phn_num)
+        phn.send_keys(checkOut['phn_num'])
 
         cntnue = self.driver.find_element("xpath", self.continue_button)
         cntnue.click()
