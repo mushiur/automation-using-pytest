@@ -4,6 +4,7 @@ import testData.logInData
 class Login:
 
     def __init__(self, driver, locator):
+        self.x = None
         self.driver = driver
         self.loginBtn = locator["LOCATORS"]["log_in"]
         self.email = locator["LOCATORS"]["email"]
@@ -15,3 +16,4 @@ class Login:
         self.driver.find_element("id", self.email).send_keys(email)
         self.driver.find_element("id", self.password_field).send_keys(log['password'])
         self.driver.find_element("xpath", self.conBtn).click()
+        self.x = self.driver.title
