@@ -1,4 +1,3 @@
-import testData.registerData
 
 
 class Register:
