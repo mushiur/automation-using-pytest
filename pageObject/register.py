@@ -3,6 +3,7 @@
 class Register:
 
     def __init__(self, driver, locator):
+        self.x = None
         self.driver = driver
         self.regBtn = locator["LOCATORS"]["registration"]
         self.genderBtn = locator["LOCATORS"]["gender"]
@@ -21,6 +22,7 @@ class Register:
     def registration(self, email, reg):
         self.driver.find_element("xpath", self.regBtn).click()
         self.driver.find_element("xpath", self.genderBtn).click()
+        self.x = self.driver.title
         # imported from testdata file
         self.driver.find_element("id", self.firstnameBtn).send_keys(reg['firstName'])
         self.driver.find_element("id", self.lastnameBtn).send_keys(reg['lastName'])
@@ -34,4 +36,5 @@ class Register:
         self.driver.find_element("id", self.confirm_pass_fieldBtn).send_keys(reg['password'])
         self.driver.find_element("xpath", self.reg_confirm_fieldBtn).click()
         self.driver.find_element("xpath", self.log_outBtn).click()
+
 
