@@ -19,4 +19,6 @@ class Test_003_search:
         search = Search(driver, locator)
         open_url.open_webBrowser()
         login.log_in(email, log=self.log)
+        assert login.x == "nopCommerce demo store"
         search.search_box(self.search)
+        assert search.search == "nopCommerce demo store. Search"

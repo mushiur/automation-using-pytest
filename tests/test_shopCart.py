@@ -23,3 +23,6 @@ class Test_004_shopCart:
         login.log_in(email, self.log)
         search.search_box(self.search)
         shop_cart.shopping_cart()
+        assert shop_cart.custom == "nopCommerce demo store. Custom T-Shirt"
+        if shop_cart.shopCart == "nopCommerce demo store. Shopping Cart":
+            print("Successfully DONE")

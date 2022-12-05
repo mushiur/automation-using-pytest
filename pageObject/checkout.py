@@ -5,6 +5,9 @@ import testData.checkoutData
 
 class CheckOut:
     def __init__(self, driver, locator):
+        self.homeTitle = None
+        self.checkOut_title = None
+        self.shopCart = None
         self.driver = driver
         self.shop_cartBtn = locator["LOCATORS"]["shop_cart"]
         self.term_condition_boxBtn = locator["LOCATORS"]["term_condition_box"]
@@ -23,8 +26,11 @@ class CheckOut:
 
     def checkout_billing_details(self, checkOut):
         self.driver.find_element("xpath", self.shop_cartBtn).click()
+        self.shopCart = self.driver.title
         self.driver.find_element("xpath", self.term_condition_boxBtn).click()
         self.driver.find_element("xpath", self.checkout_fieldBtn).click()
+
+        self.checkOut_title = self.driver.title
 
         country = self.driver.find_element("xpath", self.country_fieldBtn)
         country.click()
@@ -55,4 +61,5 @@ class CheckOut:
         self.driver.find_element("xpath", self.confirm_order_filed).click()
         time.sleep(2)
         self.driver.find_element("xpath", self.order_complete_field).click()
+        self.homeTitle = self.driver.title
         time.sleep(2)

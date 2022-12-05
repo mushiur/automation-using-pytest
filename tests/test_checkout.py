@@ -20,3 +20,6 @@ class Test_005_checkout:
         open_url.open_webBrowser()
         login.log_in(email, self.log)
         check_out.checkout_billing_details(self.checkOut)
+        assert check_out.shopCart == "nopCommerce demo store. Shopping Cart"
+        assert check_out.checkOut_title == "nopCommerce demo store. Checkout"
+        assert check_out.homeTitle == "nopCommerce demo store"
